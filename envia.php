@@ -40,7 +40,7 @@ exit;
 
 else {
 echo “<script>alert(‘Preencha todos os campos!’);</script>”;
-echo “<script>window.location = ‘index.html#contato’;</script>”; //Altere aqui para o endereço de seu formulário
+echo “<script>window.location = ‘index.html’;</script>”; //Altere aqui para o endereço de seu formulário
 exit;
 }
 
