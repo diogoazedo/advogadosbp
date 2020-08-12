@@ -7,6 +7,15 @@
   src: url(/fonts/Arapey-Regular.ttf)
 }
 
+.section_owners {
+  padding: 40px 30px;
+  background: #fbf9ff;
+}
+
+.authors {
+  margin-left: 15px;
+}
+
 /* line 2, E:/167 Bizcon Business/Bizcon_html/sass/_extends.scss */
 .btn_1, .banner_part .banner_text .btn_1 {
   background-image: -webkit-linear-gradient(131deg, #0B4AAC, #062556, #062556, #062556);
@@ -2698,7 +2707,6 @@ ul {
   .banner_part {
     height: 650px;
     background-image: none;
-    background-color: #f0eed4;
   }
 }
 

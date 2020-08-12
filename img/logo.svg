@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="211" height="82" viewBox="0 0 211 82">
+  <g id="Group_3" data-name="Group 3" transform="translate(-1083 -573)">
+    <text id="Azedo_Monteiro" data-name="Azedo&amp;Monteiro" transform="translate(1136 593)" fill="#101f31" font-size="23" font-family="Arapey-Regular, Arapey" letter-spacing="0.017em"><tspan x="0" y="0">Azedo&amp;Monteiro</tspan></text>
+    <text id="ADVOCACIA" transform="translate(1136 617)" fill="#101f31" font-size="18" font-family="Arapey-Regular, Arapey" letter-spacing="0.48em"><tspan x="0" y="0">ADVOCACIA</tspan></text>
+    <g id="Group_1" data-name="Group 1" transform="translate(1136 621.857)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="157" height="5" transform="translate(0 0.143)" fill="#0b4aac"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M7.5,0,15,10H0Z" transform="translate(86 10.143) rotate(180)" fill="#0b4aac"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(1105 578)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="16" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="15" height="16" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(1105 600)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="16" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="15" height="16" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1083 599)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="17" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="16" height="16" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(1089 587)" fill="none" stroke="#707070" stroke-width="1">
+      <rect width="36" height="34" stroke="none"/>
+      <rect x="0.5" y="0.5" width="35" height="33" fill="none"/>
+    </g>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="17" height="17" transform="translate(1083 578)" fill="rgba(11,74,172,0.6)"/>
+    <text id="BusinessPartner" transform="translate(1136 649)" fill="#101f31" font-size="19" font-family="Now-Black, Now" font-weight="800" letter-spacing="0.011em"><tspan x="0" y="0">BusinessPartner</tspan></text>
+  </g>
+</svg>
