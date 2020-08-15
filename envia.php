@@ -1,49 +1,42 @@
 <?php
+$name = $_POST['name'];
+//pega os dados que foi digitado no ID name.
 
-include_once(‘phpmailer.php’); //Chama o arquivo phpmailer.php com as funções para realizar o envio.
+$email = $_POST['email'];
+//pega os dados que foi digitado no ID email.
 
-//#########################################
-// Recebe as informações do formulário
-//#########################################
+$subject = $_POST['subject'];
+//pega os dados que foi digitado no ID sebject.
 
-$nome = $_POST[’name’];
-$email = $_POST[’email’];
-$assunto = $_POST[‘subject’];
-$mensagem = $_POST[‘message’];
+$message = $_POST['message'];
+//pega os dados que foi digitado no ID message.
+$myEmail = "contato@advogadosbp.com.br";//é necessário informar um e-mail do próprio domínio
+$headers = "From: $myEmail\r\n";
+$headers .= "Reply-To: $email\r\n";
 
-//#########################################
-// Dados da conta de e-mail que fará o envio
-//#########################################
+/*abaixo contém os dados que serão enviados para o email
+cadastrado para receber o formulário*/
 
-$smtp = new Smtp(“localhost”); //Endereço do SMTP, geralmente localhost.
-$smtp->user = “contato@advogadosbp.com.br”; //Conta de email
-$smtp->pass = “A(V65rfZM(N_”; //Senha da Conta de e-mail.
-$smtp->debug = false; //Somente para usuários avançados que desejam o log do envio para testes.
+$corpo = "Formulário enviado\n";
+$corpo .= "Nome: " . $name . "\n";
+$corpo .= "Email: " . $email . "\n";
+$corpo .= "Comentários: " . $message . "\n";
 
-//#########################################
-// Envio do formulário
-//#########################################
+$email_to = 'contato@advogadobp.com.br';
+//não esqueça de substituir este email pelo seu.
 
-$to = “contato@advogadosbp.com.br”; //Informe aqui o e-mail que deve receber a mensagem do formulário.
-$from = $email;
-$subject = “Contato – ” . $assunto;
-$msg = $mensagem;
+$status = mail($email_to, $subject, $corpo, $headers);
+//enviando o email.
 
-if (isset($_POST[‘submit’])) {
-if($nome && $email && $assunto && $mensagem) {
-if($smtp->Send($to, $from, $subject, $msg)){
-echo “<script>alert(‘Contato enviado!’);</script>”;
-echo “<script>window.location = ‘index.html’;</script>”; //Altere aqui para o endereço de sua página.
-exit;
-}
-}
+if ($status) {
+  echo "<script> alert('Formulário enviado com sucesso!'); </script>";
+  
+//mensagem de form enviado com sucesso.
 
-else {
-echo “<script>alert(‘Preencha todos os campos!’);</script>”;
-echo “<script>window.location = ‘index.html’;</script>”; //Altere aqui para o endereço de seu formulário
-exit;
-}
+} else {
+  echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+  
+//mensagem de erro no envio. 
 
 }
-
 ?>
