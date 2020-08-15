@@ -22,7 +22,7 @@ $corpo .= "Nome: " . $name . "\n";
 $corpo .= "Email: " . $email . "\n";
 $corpo .= "Comentários: " . $message . "\n";
 
-$email_to = 'contato@advogadobp.com.br';
+$email_to = 'contato@advogadosbp.com.br';
 //não esqueça de substituir este email pelo seu.
 
 $status = mail($email_to, $subject, $corpo, $headers);
@@ -30,13 +30,16 @@ $status = mail($email_to, $subject, $corpo, $headers);
 
 if ($status) {
   echo "<script> 
-        alert('Formulário enviado com sucesso!'); 
+        alert('Mensagem enviada com sucesso!'); 
         window.location='index.html';      
   </script>";
 //mensagem de form enviado com sucesso.
 
 } else {
-  echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+  echo "<script> 
+        alert('Falha ao enviar a mensagem.'); 
+        window.location='index.html';   
+        </script>";
 //mensagem de erro no envio. 
 }
 ?>
