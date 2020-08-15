@@ -30,11 +30,13 @@ $status = mail($email_to, $subject, $corpo, $headers);
 
 if ($status) {
   echo "<script> alert('Formulário enviado com sucesso!'); </script>";
+  window.location='index.html';
   
 //mensagem de form enviado com sucesso.
 
 } else {
   echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
+  window.location='index.html';
   
 //mensagem de erro no envio. 
 
