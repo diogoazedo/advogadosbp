@@ -61,8 +61,8 @@
                     <div class="banner_text">
                         <div class="banner_text_iner">
                             <h1>Tenha um parceiro jurídico para o seu negócio.</h1>
-                            <p>Conte com o nosso time para ajudar a sua empresa a resolver problemas antes que eles acontençam.</p>
-                            <a href="#sobre" class="btn_1">saiba mais </a>
+                            <p>Conte com o nosso time para ajudar a sua empresa a resolver problemas antes que aconteçam.</p>
+                            <a href="img/parceiro_juridico.pdf" target="_blank" class="btn_1">saiba mais </a>
                         </div>
                     </div>
                 </div>
@@ -85,9 +85,10 @@
                         <h2>Parceria para o crescimento do seu negócio</h2>
                         <h4>Consultoria para gestão de processos e mitigação de risco</h4>
                         <p>Seus problemas não precisam ser resolvidos apenas quando aparecem. Com a criação de processos claros, dashboards e mapeamento dos fluxos
-                            da sua companhia, conseguimos te ajudar a mitigar riscos, reduzir custos e otimizar o seu processo através de uma assessoria e suporte jurídico.
+                            da sua companhia, conseguimos te ajudar a mitigar riscos, reduzir custos e otimizar o seu processo através de uma assessoria e suporte jurídico. <br/>
+                            Leia nossa apresentação para saber mais
                         </p>
-                        <a href="#contato" class="btn_2">Saiba mais</a>
+                        <a href="img/apresentacao_advogadosbp.pdf" target="_blank" class="btn_2">Baixar agora</a>
                     </div>
                 </div>
             </div>
@@ -109,35 +110,47 @@
                     <div class="single_service_part">
                         <span class="single_service_icon"><i class="lnr lnr-graduation-hat"></i></span>
                         <h4>Autoconhecimento</h4>
-                        <p></p>
+                        <p>
+                            “O risco vem de você não saber o que está fazendo.” Warren Buffet.
+                            Uma consultoria jurídica ativa, com multidisciplinaridade, contribui para a gestão do seu negócio.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-4">
                     <div class="single_service_part">
                         <span class="single_service_icon"><i class="lnr lnr-cog"></i></span>
                         <h4>Processos Produtivos</h4>
-                        <p></p>
+                        <p>
+                            Mapeamento dos fluxos organizacionais, a fim de possibilitar identificação, análises e tratamento dos riscos.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-4">
                     <div class="single_service_part">
                         <span class="single_service_icon"><i class="lnr lnr-bug"></i></span>
                         <h4>Fraudes e Problemas jurídicos</h4>
-                        <p></p>
+                        <p>
+                            Os problemas ocorrem no fluxo do processo organizacional. Com conhecimento do seu negócio e um dashboard dinâmico conseguimos atuar de forma imediata na identificação e solução dos problemas ainda na raiz.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-4">
                     <div class="single_service_part">
                         <span class="single_service_icon"><i class="lnr lnr-apartment"></i></span>
                         <h4>Relacionamento Poder Público</h4>
-                        <p></p>
+                        <p>
+                            Todos se relacionam com o poder público. Por isso elaboramos um Programa de Integridade que demonstra para as autoridades públicas o compromisso da empresa com a ética.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-4">
                     <div class="single_service_part">
                         <span class="single_service_icon"><i class="lnr lnr-rocket"></i></span>
                         <h4>Vantagem competitiva</h4>
-                        <p></p>
+                        <p>
+                            Maximização do valor da empresa, melhorias na gestão, longevidade e sustentabilidade, traduzem-se em verdadeira vantagem competitiva.
+
+                        </p>
                     </div>
                 </div>
             </div>
@@ -185,9 +198,13 @@
         <div class="col-lg-8">
           <form class="form-contact contact_form" action="envia.php" method="post" id="contactForm" novalidate="novalidate">
             <div class="row">
+            <div class="col-12">
+                    <div class="form-group">
+                      <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Assunto'" placeholder = 'Assunto'>
+                    </div>
+            </div>
               <div class="col-12">
                 <div class="form-group">
-                  
                     <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escreva sua mensagem'" placeholder = 'Escreva sua mensagem'></textarea>
                 </div>
               </div>
@@ -198,12 +215,17 @@
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
+                  <input class="form-control" name="company" id="company" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Empresa'" placeholder = 'Empresa'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
                   <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'e-mail'" placeholder = 'e-mail'>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Assunto'" placeholder = 'Assunto'>
+                  <input class="form-control" name="phone" id="phone" type="phone" onfocus="this.placeholder = ''" onblur="this.placeholder = '(DD) 99999-9999'" placeholder = 'Telefone'>
                 </div>
               </div>
             </div>
@@ -231,7 +253,7 @@
             <span class="contact-info__icon"><i class="lnr lnr-envelope"></i></span>
             <div class="media-body">
               <h3>contato@advogadosbp.com.br</h3>
-              <p>Entre em contato</p>
+              <p>Responderemos imediatamente.</p>
             </div>
           </div>
         </div>

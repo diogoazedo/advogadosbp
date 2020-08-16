@@ -19,7 +19,9 @@ cadastrado para receber o formulário*/
 
 $corpo = "Formulário enviado\n";
 $corpo .= "Nome: " . $name . "\n";
+$corpo .= "Empresa: " . $company . "\n";
 $corpo .= "Email: " . $email . "\n";
+$corpo .= "Telefone: " . $phone . "\n";
 $corpo .= "Comentários: " . $message . "\n";
 
 $email_to = 'contato@advogadosbp.com.br';
