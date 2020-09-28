@@ -1,4 +1,25 @@
+# Normalização de URL
+RewriteEngine on
+
+# https sem www
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Autenticação básica (requer arquivo .htpasswd)
+<Files /canal_denuncia.html>
+AuthName "Please enter your ID and password"
 AuthType Basic
-AuthName "C:\\pubic\\saverhomecare\\canal_denuncia"
-AuthUserFile C:\\public\\saverhomecare\\.htpasswd
+AuthUserFile https://advogadosbp.com.br/saverhomecare/.htpasswd
 Require valid-user
+</Files>
+
+# Impedir o acesso ao arquivo .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Impedir o acesso à lista de diretórios e arquivos
+Options All -Indexes
