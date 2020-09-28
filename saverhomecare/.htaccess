@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "C:\\pubic\\saverhomecare\\canal_denuncia"
+AuthUserFile C:\\public\\saverhomecare\\.htpasswd
+Require valid-user
