@@ -8,8 +8,11 @@ $name = $_POST['name'];
 $sender = $_POST['sender'];
 //pega os dados que foi digitado no ID sebject.
 
-$subject = "Saver Home Care: Novo report feito"
+$subject = 'Saver Home Care: Novo report feito';
+
 $myEmail = "contato@advogadosbp.com.br"; //é necessário informar um e-mail do próprio domínio
+$headers = "From: $myEmail\r\n";
+$headers .= "Reply-To: $email\r\n";
 
 /*abaixo contém os dados que serão enviados para o email
 cadastrado para receber o formulário*/
