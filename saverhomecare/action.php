@@ -29,14 +29,14 @@ $status = mail($email_to, $subject, $corpo);
 if ($status) {
   echo "<script> 
         alert('Mensagem enviada com sucesso!'); 
-        window.location='index.html';      
+        window.location='canaldenuncia.html';      
   </script>";
 //mensagem de form enviado com sucesso.
 
 } else {
   echo "<script> 
         alert('Falha ao enviar a mensagem.'); 
-        window.location='https://advogadosbp.com.br/saverhomecare/canaldenuncia.html';   
+        window.location='canaldenuncia.html';   
         </script>";
 //mensagem de erro no envio. 
 }
