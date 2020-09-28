@@ -2522,7 +2522,7 @@ ul {
 
 /* line 18, E:/167 Bizcon Business/Bizcon_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li a {
-  color: #2f373d !important;
+  color: #2f373d;
   font-size: 16px;
   padding: 7px 24px !important;
   font-family: 'Open-sans', sans-serif;
