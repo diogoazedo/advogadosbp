@@ -10,6 +10,7 @@ $subject = $_POST['subject'];
 
 $message = $_POST['message'];
 //pega os dados que foi digitado no ID message.
+
 $myEmail = "contato@advogadosbp.com.br";//é necessário informar um e-mail do próprio domínio
 $headers = "From: $myEmail\r\n";
 $headers .= "Reply-To: $email\r\n";
